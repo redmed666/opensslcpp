@@ -1,0 +1,9 @@
+[requires]
+OpenSSL/1.0.2j@med/stable
+
+[generators]
+cmake
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
+lib, *.dylib* -> ./bin
